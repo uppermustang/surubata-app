@@ -59,7 +59,14 @@ export default async function RootLayout({
       className={`${newsreader.variable} ${manrope.variable} ${notoSans.variable} ${notoSerif.variable} h-full`}
     >
       <body className="min-h-dvh bg-background text-foreground antialiased">
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem storageKey="surubata-theme" disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          enableColorScheme
+          storageKey="surubata-theme"
+          disableTransitionOnChange
+        >
           {children}
         </ThemeProvider>
       </body>
