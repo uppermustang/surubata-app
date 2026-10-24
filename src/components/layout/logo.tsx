@@ -12,13 +12,13 @@ export function LogoMark({ className }: { className?: string }) {
   );
 }
 
-export function Logo({ className }: { className?: string }) {
+export function Logo({ className, variant = "serif" }: { className?: string; variant?: "serif" | "sans" }) {
   return (
     <Link href="/" aria-label="Surubata" className={cn("inline-flex items-center gap-2.5 rounded-md text-foreground", className)}>
-      <LogoMark />
-      <span className="logo-word text-[1.55rem] sm:text-[1.7rem]" aria-hidden="true">
+      {variant === "serif" ? <LogoMark /> : null}
+      <span className={cn(variant === "sans" ? "logo-sans text-[1.45rem] sm:text-[1.6rem]" : "logo-word text-[1.55rem] sm:text-[1.7rem]")} aria-hidden="true">
         <span>Suru</span>
-        <span className="-ml-[0.045em] text-accent">bata</span>
+        <span className={variant === "sans" ? "bata" : "-ml-[0.045em] text-accent"}>bata</span>
       </span>
     </Link>
   );

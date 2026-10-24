@@ -84,7 +84,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur-md">
       <div className="h-[3px] bg-accent" aria-hidden />
       <Container className="flex h-16 items-center gap-2">
-        <Logo />
+        <Logo variant="sans" />
         <NavLinks className="ml-8 hidden items-center gap-5 lg:flex" />
         <div className="ml-auto flex items-center gap-0.5 sm:gap-1">
           <form action={`/${locale}/search`} role="search" className="relative hidden md:block">

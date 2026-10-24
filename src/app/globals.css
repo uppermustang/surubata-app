@@ -92,6 +92,21 @@ html[lang="ne"] body {
   line-height: 1;
 }
 
+.logo-sans {
+  font-family: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.logo-sans .bata {
+  color: #c2410c;
+}
+
+html.dark .logo-sans .bata {
+  color: #e8a06a;
+}
+
 html[lang="ne"] .font-display,
 html[lang="ne"] h1,
 html[lang="ne"] h2,
