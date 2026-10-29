@@ -1,10 +1,13 @@
 import { ImageResponse } from "next/og";
+import { brandMarkDataUri } from "@/lib/brand-mark";
 
-export const alt = "Surubata — Practical tech, from the start.";
+export const alt = "BotDawn — Practical tech, from the start.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function OpenGraphImage() {
+export default async function OpenGraphImage() {
+  const mark = await brandMarkDataUri();
+
   return new ImageResponse(
     (
       <div
@@ -20,8 +23,9 @@ export default function OpenGraphImage() {
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <div style={{ width: 18, height: 18, borderRadius: 99, background: "#9a3412" }} />
-          <div style={{ fontSize: 28, letterSpacing: 4, textTransform: "uppercase" }}>Surubata</div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={mark} width={48} height={68} alt="" />
+          <div style={{ fontSize: 28, letterSpacing: 4, textTransform: "uppercase" }}>BotDawn</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 18, maxWidth: 900 }}>
           <div style={{ fontSize: 76, lineHeight: 1.05, letterSpacing: -1.5 }}>

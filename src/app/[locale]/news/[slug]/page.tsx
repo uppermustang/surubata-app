@@ -56,8 +56,8 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ loc
           inLanguage: locale,
           url,
           citation: item.sourceUrl,
-          author: { "@type": "Organization", name: "Surubata" },
-          publisher: { "@type": "Organization", name: "Surubata" },
+          author: { "@type": "Organization", name: "BotDawn" },
+          publisher: { "@type": "Organization", name: "BotDawn" },
         }}
       />
       <JsonLd

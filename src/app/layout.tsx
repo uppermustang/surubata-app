@@ -35,12 +35,12 @@ const notoSerif = Noto_Serif_Devanagari({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
   title: {
-    default: "Surubata",
-    template: "%s · Surubata",
+    default: "BotDawn",
+    template: "%s · BotDawn",
   },
-  applicationName: "Surubata",
-  authors: [{ name: "Surubata" }],
-  creator: "Surubata",
+  applicationName: "BotDawn",
+  authors: [{ name: "BotDawn" }],
+  creator: "BotDawn",
   formatDetection: { telephone: false, email: false, address: false },
 };
 
@@ -64,7 +64,7 @@ export default async function RootLayout({
           defaultTheme="light"
           enableSystem
           enableColorScheme
-          storageKey="surubata-theme"
+          storageKey="botdawn-theme"
           disableTransitionOnChange
         >
           {children}

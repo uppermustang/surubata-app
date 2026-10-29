@@ -30,7 +30,7 @@ export async function GET(_request: Request, context: { params: Promise<{ locale
     .sort((a, b) => b.date.localeCompare(a.date))
     .slice(0, 20);
 
-  const channelTitle = locale === "ne" ? "सुरुबाट" : "Surubata";
+  const channelTitle = "BotDawn";
   const description =
     locale === "ne"
       ? "नेपाली निर्माणकर्ताका लागि काम लाग्ने एआई र अटोमेसन।"

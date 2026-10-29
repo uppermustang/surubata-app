@@ -42,7 +42,7 @@ export function pageMetadata({
       title,
       description,
       url,
-      siteName: "Surubata",
+      siteName: "BotDawn",
       locale: locale === "ne" ? "ne_NP" : "en_US",
       alternateLocale: locale === "ne" ? ["en_US"] : ["ne_NP"],
       type,
@@ -77,8 +77,8 @@ export function organizationJsonLd() {
     "@graph": [
       {
         "@type": "Organization",
-        name: "Surubata",
-        alternateName: "सुरुबाट",
+        name: "BotDawn",
+        alternateName: "बोटडन",
         url,
         logo: `${url}/icon`,
         description:
@@ -86,7 +86,7 @@ export function organizationJsonLd() {
       },
       {
         "@type": "WebSite",
-        name: "Surubata",
+        name: "BotDawn",
         url,
         inLanguage: ["ne", "en"],
         potentialAction: {

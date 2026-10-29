@@ -1,6 +1,6 @@
 {
   "meta": {
-    "homeTitle": "Surubata — Tech, media, and useful next steps",
+    "homeTitle": "BotDawn — Tech, media, and useful next steps",
     "homeDescription": "Episodes, news, and opinion on technology, social media, AI, and automation. For anyone who wants the useful next step.",
     "podcastTitle": "Podcast",
     "podcastDescription": "Video and conversation on tech, social media, AI, and automation — including news, opinion, and guests.",
@@ -13,13 +13,13 @@
     "newsletterTitle": "Newsletter",
     "newsletterDescription": "A short bilingual letter with the one thing worth doing this week.",
     "aboutTitle": "About",
-    "aboutDescription": "Why Surubata exists, who it is for, and how the desk works.",
+    "aboutDescription": "Why BotDawn exists, who it is for, and how the desk works.",
     "searchTitle": "Search",
     "searchDescription": "Search episodes, news, articles, and resources.",
     "topicsTitle": "Topics",
-    "topicsDescription": "Browse Surubata by the job the work helps with.",
+    "topicsDescription": "Browse BotDawn by the job the work helps with.",
     "requestTitle": "What do you need?",
-    "requestDescription": "Describe the job. Surubata matches a resource, or keeps the request for the desk."
+    "requestDescription": "Describe the job. BotDawn matches a resource, or keeps the request for the desk."
   },
   "nav": {
     "podcast": "Podcast",
@@ -52,7 +52,7 @@
     "placeholder": "Search guides, news, tools",
     "short": "Search",
     "submit": "Search",
-    "label": "Search Surubata",
+    "label": "Search BotDawn",
     "empty": "No matches yet. Try a shorter phrase, or tell us what you need.",
     "results": "{count} results for “{query}”",
     "prompt": "Search episodes, briefs, articles, and resources.",
@@ -62,7 +62,7 @@
     "eyebrow": "Tech, social media, and the tools around them",
     "titleLead": "Less hype.",
     "titleRest": "More useful next steps.",
-    "lede": "Surubata follows technology, social media, AI, and automation — and how people actually use them. Episodes, news, and opinion, with guests along the way.",
+    "lede": "BotDawn follows technology, social media, AI, and automation — and how people actually use them. Episodes, news, and opinion, with guests along the way.",
     "primaryCta": "Read today’s brief",
     "secondaryCta": "Get the letter",
     "path1": "Podcast and video",
@@ -116,7 +116,7 @@
     "noResults": "Nothing in this view yet.",
     "external": "Opens in a new tab",
     "rss": "RSS",
-    "desk": "Surubata Desk",
+    "desk": "BotDawn Desk",
     "backHome": "Back home"
   },
   "categories": {
@@ -159,7 +159,7 @@
     "videoLabel": "Episode video",
     "playVideo": "Play video",
     "videoMissing": "Add a YouTube ID in the episode file to embed the video here.",
-    "sampleNote": "Demo player. This clip is embedded from YouTube and is not the Surubata episode.",
+    "sampleNote": "Demo player. This clip is embedded from YouTube and is not the BotDawn episode.",
     "audioLabel": "Episode audio",
     "audioMissing": "Audio will appear here when an audio file URL is added. The video is the primary cut for now.",
     "play": "Play audio",
@@ -177,7 +177,7 @@
     "filterLabel": "News categories",
     "showing": "{count} briefs",
     "readSource": "Read further",
-    "notFull": "Surubata writes the brief. We do not republish the full piece."
+    "notFull": "BotDawn writes the brief. We do not republish the full piece."
   },
   "articles": {
     "eyebrow": "Deep dives",
@@ -223,7 +223,7 @@
   "request": {
     "eyebrow": "Ask the desk",
     "title": "What do you need?",
-    "description": "Describe the job. We match it to something already on Surubata, and keep the request so the desk can make what is missing.",
+    "description": "Describe the job. We match it to something already on BotDawn, and keep the request so the desk can make what is missing.",
     "need": "I need something",
     "topic": "Suggest a topic",
     "messageLabel": "What are you trying to do?",
@@ -254,7 +254,7 @@
     "blurb": "Technology, social media, AI, and automation — episodes, news, opinion, and guests.",
     "explore": "Explore",
     "desk": "The desk",
-    "rights": "© {year} Surubata. Sample content for the product build.",
+    "rights": "© {year} BotDawn. Sample content for the product build.",
     "language": "Nepali and English"
   },
   "notFound": {

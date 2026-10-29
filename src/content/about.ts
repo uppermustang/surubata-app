@@ -3,18 +3,18 @@ import type { Localized } from "@/types/content";
 /** Sample host profile. Replace the name and biography before launch. */
 export const aboutPage = {
   meaning: {
-    en: "Surubata comes from the Nepali सुरुबाट — from the beginning.",
-    ne: "सुरुबाटको अर्थ नै यही हो — सुरुदेखि।",
+    en: "BotDawn is named for the dawn of everyday AI — a new day for how small teams work.",
+    ne: "BotDawn को अर्थ — दैनिक एआईको बिहानी, साना टोलीको कामका लागि नयाँ दिन।",
   },
   storyTitle: { en: "The story", ne: "कथा" },
   story: {
     en: [
       "Nepali creators and small businesses were being handed a global AI conversation that did not match the work. The advice assumed a large team, a Silicon Valley price list, and a customer who reads English at midnight. The actual work looked different: a WhatsApp thread, a diaspora client six time zones away, a shop that has to see the return this month.",
-      "Surubata is a bilingual desk for that work. We brief the news, write the deep guide, and leave the tool where you can copy it.",
+      "BotDawn is a bilingual desk for that work. We brief the news, write the deep guide, and leave the tool where you can copy it.",
     ],
     ne: [
       "नेपाली सिर्जनाकर्ता र साना व्यवसायलाई विश्वको एआई बहस त्यस्तो रूपमा आइरहेको थियो, जुन उनीहरूको कामसँग मिल्दैनथ्यो। सल्लाहले ठूलो टोली, सिलिकन भ्यालीको मूल्यसूची, र मध्यरातमा अङ्ग्रेजी पढ्ने ग्राहक कल्पना गर्थ्यो। वास्तविक काम अर्कै थियो: व्हाट्सएपको थ्रेड, छ समय क्षेत्र परको डायस्पोरा ग्राहक, र यही महिना प्रतिफल देख्नुपर्ने पसल।",
-      "सुरुबाट त्यही कामका लागि द्विभाषिक डेस्क हो। हामी समाचार संक्षेप गर्छौं, गहिरो गाइड लेख्छौं, र औजार त्यहाँ छोड्छौं जहाँबाट तपाईं कपी गर्न सक्नुहुन्छ।",
+      "BotDawn त्यही कामका लागि द्विभाषिक डेस्क हो। हामी समाचार संक्षेप गर्छौं, गहिरो गाइड लेख्छौं, र औजार त्यहाँ छोड्छौं जहाँबाट तपाईं कपी गर्न सक्नुहुन्छ।",
     ],
   },
   missionTitle: { en: "Mission", ne: "उद्देश्य" },
@@ -36,14 +36,14 @@ export const aboutPage = {
     ],
   },
   hostTitle: { en: "The host", ne: "होस्ट" },
-  hostName: { en: "Surubata Host", ne: "सुरुबाट होस्ट" },
+  hostName: { en: "BotDawn Host", ne: "BotDawn होस्ट" },
   hostRole: { en: "Practitioner and editor", ne: "अभ्यासकर्ता र सम्पादक" },
   hostBio: {
     en: [
-      "I spend my weeks inside client work: proposals, content systems, and the messy threads where a business actually closes. Surubata is the briefing I wanted on a busy morning — sourced, short, and biased toward what you can ship this week.",
+      "I spend my weeks inside client work: proposals, content systems, and the messy threads where a business actually closes. BotDawn is the briefing I wanted on a busy morning — sourced, short, and biased toward what you can ship this week.",
     ],
     ne: [
-      "मेरो हप्ता ग्राहकको कामभित्र बित्छ: प्रस्ताव, कन्टेन्ट प्रणाली, र व्यवसाय वास्तवमा टुंगिने अलमलिएका थ्रेड। सुरुबाट त्यो ब्रिफिङ हो जुन व्यस्त बिहान म आफैं पढ्न चाहन्थें — स्रोतसहित, छोटो, र यही हप्ता पठाउन मिल्ने कुरातिर ढल्केको।",
+      "मेरो हप्ता ग्राहकको कामभित्र बित्छ: प्रस्ताव, कन्टेन्ट प्रणाली, र व्यवसाय वास्तवमा टुंगिने अलमलिएका थ्रेड। BotDawn त्यो ब्रिफिङ हो जुन व्यस्त बिहान म आफैं पढ्न चाहन्थें — स्रोतसहित, छोटो, र यही हप्ता पठाउन मिल्ने कुरातिर ढल्केको।",
     ],
   },
   hostNote: {

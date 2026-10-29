@@ -63,8 +63,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
           image: article.image ? absoluteUrl(article.image.src) : undefined,
           inLanguage: locale,
           url,
-          author: { "@type": "Organization", name: "Surubata" },
-          publisher: { "@type": "Organization", name: "Surubata", logo: { "@type": "ImageObject", url: absoluteUrl("/icon") } },
+          author: { "@type": "Organization", name: "BotDawn" },
+          publisher: { "@type": "Organization", name: "BotDawn", logo: { "@type": "ImageObject", url: absoluteUrl("/icon") } },
           mainEntityOfPage: url,
         }}
       />
@@ -116,7 +116,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ locale
             </ul>
           </article>
           <aside className="no-print hidden lg:block">
-            <div className="sticky top-24">
+            <div className="sticky top-28">
               <TableOfContents items={article.toc} label={t("articles.toc")} />
             </div>
           </aside>

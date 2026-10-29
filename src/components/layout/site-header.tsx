@@ -41,9 +41,9 @@ function NavLinks({
             aria-current={active ? "page" : undefined}
             onClick={onNavigate}
             className={cn(
-              "rounded-md font-medium",
-              itemClassName ?? "text-sm",
-              active ? "text-foreground" : "text-muted-foreground hover:text-foreground",
+              "rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
+              active ? "bg-foreground text-background" : "text-muted-foreground hover:bg-muted hover:text-foreground",
+              itemClassName,
             )}
           >
             {t(link.key)}
@@ -81,24 +81,24 @@ export function SiteHeader() {
   }, [router]);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur-md">
-      <div className="h-[3px] bg-accent" aria-hidden />
-      <Container className="flex h-16 items-center gap-2">
+    <header className="sticky top-0 z-40 border-b border-border/80 bg-background/80 backdrop-blur-xl">
+      <div className="h-0.5 bg-accent" aria-hidden />
+      <Container className="flex h-20 max-w-7xl items-center gap-3 sm:h-24 sm:gap-8">
         <Logo variant="sans" />
-        <NavLinks className="ml-8 hidden items-center gap-5 lg:flex" />
-        <div className="ml-auto flex items-center gap-0.5 sm:gap-1">
+        <NavLinks className="hidden items-center gap-1 lg:flex" />
+        <div className="ml-auto flex items-center gap-0.5 sm:gap-2">
           <form action={`/${locale}/search`} role="search" className="relative hidden md:block">
             <label htmlFor="site-search" className="sr-only">
               {search("label")}
             </label>
-            <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" aria-hidden />
+            <Search className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" aria-hidden />
             <input
               id="site-search"
               name="q"
               placeholder={search("short")}
-              className="h-10 w-36 rounded-md border border-border bg-card pr-8 pl-9 text-sm xl:w-52"
+              className="h-11 w-44 rounded-full border border-border bg-muted/70 pr-9 pl-10 text-sm outline-none transition focus:border-foreground/20 focus:bg-card xl:w-60"
             />
-            <kbd className="pointer-events-none absolute right-2 top-1/2 hidden -translate-y-1/2 text-[10px] text-muted-foreground lg:inline" aria-hidden>
+            <kbd className="pointer-events-none absolute right-3 top-1/2 hidden -translate-y-1/2 text-[10px] text-muted-foreground lg:inline" aria-hidden>
               /
             </kbd>
           </form>
@@ -108,20 +108,22 @@ export function SiteHeader() {
           <Link
             href="/request"
             className={cn(
-              "mr-1 hidden h-9 items-center rounded-md border border-border px-3 text-sm font-semibold xl:inline-flex",
+              "hidden h-11 items-center rounded-full border border-border px-4 text-sm font-semibold transition-colors hover:bg-muted xl:inline-flex",
               pathname.startsWith("/request") && "bg-muted",
             )}
           >
             {t("request")}
           </Link>
-          <LanguageSwitcher />
+          <LanguageSwitcher className="rounded-full bg-muted/70 px-1" />
           <ThemeToggle />
           <Sheet>
             <SheetTrigger className="inline-flex size-11 items-center justify-center rounded-md hover:bg-muted lg:hidden" aria-label={t("menu")}>
               <Menu className="size-5" />
             </SheetTrigger>
             <SheetContent closeLabel={t("close")}>
-              <SheetTitle className="font-display pr-10 text-2xl">Surubata</SheetTitle>
+              <SheetTitle className="pr-10">
+                <Logo variant="sans" />
+              </SheetTitle>
               <form action={`/${locale}/search`} role="search" className="mt-6">
                 <label htmlFor="menu-search" className="sr-only">
                   {search("label")}

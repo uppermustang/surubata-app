@@ -14,7 +14,7 @@ export async function SiteFooter({ locale, topics }: { locale: Locale; topics: {
     <footer className="mt-16 border-t border-border bg-card">
       <Container className="grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2 lg:col-span-1">
-          <Logo />
+          <Logo variant="sans" />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">{t("blurb")}</p>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:contents">

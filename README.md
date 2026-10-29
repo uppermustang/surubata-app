@@ -1,8 +1,8 @@
-# Surubata
+# BotDawn
 
 Bilingual (Nepali and English) tech media site for practical AI, automation, and growth. Nepali is the default language. English lives at `/en`.
 
-The name comes from **सुरुबाट** — from the beginning.
+The name comes from the dawn of everyday AI — a new day for how small teams work.
 
 ## Stack
 

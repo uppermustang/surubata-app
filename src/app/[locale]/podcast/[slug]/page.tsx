@@ -56,7 +56,7 @@ export default async function EpisodePage({ params }: { params: Promise<{ locale
           timeRequired: `PT${episode.durationMinutes}M`,
           inLanguage: locale,
           url,
-          partOfSeries: { "@type": "PodcastSeries", name: "Surubata" },
+          partOfSeries: { "@type": "PodcastSeries", name: "BotDawn" },
         }}
       />
       <JsonLd

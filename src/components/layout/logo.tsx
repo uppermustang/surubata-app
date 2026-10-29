@@ -1,37 +1,22 @@
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
-export function LogoMark({ className }: { className?: string }) {
+export function Logo({ className, variant = "sans" }: { className?: string; variant?: "serif" | "sans" }) {
   return (
-    <svg viewBox="0 0 32 32" className={cn("size-8 shrink-0", className)} aria-hidden="true">
-      <rect x="0.5" y="0.5" width="31" height="31" rx="7.5" fill="#1c1915" stroke="currentColor" strokeOpacity="0.22" />
-      <path d="M7 22.25h18" stroke="#f6f3ec" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M10 22.25a6 6 0 0 1 12 0" stroke="#e8a06a" strokeWidth="1.75" strokeLinecap="round" />
-      <circle cx="16" cy="12.35" r="1.35" fill="#e8a06a" />
-    </svg>
-  );
-}
-
-function SurubataLogo({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 264.22842 315.76529" className={cn("h-9 w-auto shrink-0", className)} aria-hidden="true">
-      <g transform="translate(-113.1513,-58.406464)">
-        <path
-          fill="currentColor"
-          d="m 232.48658,367.06824 c -51.0105,-34.57048 -87.45579,-68.0223 -101.53706,-93.19719 -10.84046,-19.38089 -17.73471,-70.8752 -17.78402,-132.83168 l -0.0142,-17.8516 12.47656,-6.2509 c 18.16144,-9.09907 69.61669,-33.883811 70.34571,-33.883811 0.34244,0 -1.33061,2.09166 -3.71787,4.64813 -6.07966,6.51055 -11.97221,15.472241 -16.17769,24.603821 l -3.58895,7.79288 -17.45921,8.36576 c -20.92523,10.02655 -19.00954,5.69841 -17.56001,39.67356 4.11065,96.34829 9.08652,105.70138 87.72587,164.89731 21.40389,16.11183 19.75821,15.45411 26.211,10.4758 24.41305,-18.83452 34.67076,-41.77941 28.13383,-62.93097 -3.77662,-12.22005 -11.28448,-20.72605 -53.58318,-60.70697 -43.03303,-40.675 -52.2801,-61.35014 -42.2066,-94.36794 5.92193,-19.41019 33.72728,-50.822199 57.12401,-64.533596 l 4.37577,-2.564379 32.05039,15.657252 c 65.80886,32.148923 79.26656,38.698553 88.95344,43.292113 5.46284,2.59052 10.22737,5.18722 10.58782,5.77046 0.67926,1.09905 0.73171,43.3026 0.0603,48.48589 -0.20915,1.61461 -0.65408,8.21985 -0.98873,14.6783 -3.89771,75.22318 -12.69396,95.75717 -58.00005,135.39557 -7.57306,6.62568 -8.12717,6.61968 -5.26519,-0.057 2.78152,-6.48903 5.02056,-17.55145 5.02056,-24.80511 v -6.50667 l 6.02209,-6.51063 c 14.23482,-15.38958 21.6323,-30.99679 24.66874,-52.04616 3.19769,-22.16718 7.29488,-92.45534 5.4943,-94.25592 -0.50275,-0.50275 -66.04145,-32.34161 -75.81656,-36.83187 -3.22923,-1.483361 -11.54418,-5.411311 -18.47767,-8.728771 -6.93348,-3.31746 -12.95841,-5.90443 -13.38871,-5.74882 -2.09085,0.7561 -22.34152,19.511271 -27.34868,25.328991 -15.34421,17.82814 -17.84854,38.24163 -7.07147,57.64173 3.8881,6.99908 10.42578,13.7726 50.78802,52.62013 13.54221,13.034 26.68768,26.44587 29.21216,29.80417 28.56334,37.99764 12.86383,87.45143 -37.64322,118.57689 -9.28026,5.71905 -8.43069,5.84081 -21.62145,-3.09874 z"
-        />
-      </g>
-    </svg>
-  );
-}
-
-export function Logo({ className, variant = "serif" }: { className?: string; variant?: "serif" | "sans" }) {
-  return (
-    <Link href="/" aria-label="Surubata" className={cn("inline-flex items-center gap-2.5 rounded-md text-foreground", className)}>
-      {variant === "sans" ? <SurubataLogo /> : <LogoMark />}
-      <span className={cn(variant === "sans" ? "logo-sans text-[1.45rem] sm:text-[1.6rem]" : "logo-word text-[1.55rem] sm:text-[1.7rem]")} aria-hidden="true">
-        <span>Suru</span>
-        <span className={variant === "sans" ? "bata" : "-ml-[0.045em] text-accent"}>bata</span>
+    <Link href="/" aria-label="BotDawn" className={cn("inline-flex items-center gap-2.5 rounded-md text-foreground", className)}>
+      <Image
+        src="/brand/botdawn-mark.png"
+        alt=""
+        width={40}
+        height={56}
+        priority
+        unoptimized
+        className="h-12 w-9 shrink-0 object-contain sm:h-14 sm:w-10 dark:invert dark:hue-rotate-180"
+      />
+      <span className={cn(variant === "sans" ? "logo-sans text-xl sm:text-[1.6rem]" : "logo-word text-[1.35rem] sm:text-[1.7rem]")} aria-hidden="true">
+        <span>Bot</span>
+        <span className={variant === "sans" ? "dawn" : "-ml-[0.045em] text-accent"}>Dawn</span>
       </span>
     </Link>
   );

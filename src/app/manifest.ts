@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Surubata",
-    short_name: "Surubata",
+    name: "BotDawn",
+    short_name: "BotDawn",
     description: "Practical AI and automation for Nepali builders.",
     start_url: "/ne",
     display: "standalone",
